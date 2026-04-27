@@ -102,7 +102,7 @@
             <!-- روابط المحاضرات -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <!-- المحاضرة اللايف (تليجرام) -->
-                <a href="https://t.me/c/3331953900/6/262" target="_blank" class="bg-gray-50 dark:bg-[#070e0c] rounded-2xl shadow-sm border border-gray-300 dark:border-brand-teal/60 p-4 flex items-center gap-3 hover:shadow-md hover:border-brand-green dark:hover:border-brand-green transition group">
+                <a href="https://t.me/c/3331953900/6/262" target="_blank" class="bg-gray-50 dark:bg-[#070e0c] rounded-2xl border-2 border-gray-200 dark:border-brand-teal/30 p-4 flex items-center gap-3 hover:shadow-md hover:-translate-y-1 hover:border-brand-teal dark:hover:border-brand-green transition-all group">
                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-brand-teal to-brand-green text-white flex items-center justify-center group-hover:scale-105 transition shadow-lg shrink-0 border border-white/20">
                         <i class="fa-brands fa-telegram text-xl"></i>
                     </div>
@@ -114,7 +114,7 @@
                 </a>
 
                 <!-- محاضرة اليوتيوب -->
-                <a href="https://youtu.be/cKWl53cWXJA?si=OOEd9Hhrp1E9foAL" target="_blank" class="bg-gray-50 dark:bg-[#070e0c] rounded-2xl shadow-sm border border-gray-300 dark:border-brand-teal/60 p-4 flex items-center gap-3 hover:shadow-md hover:border-brand-green dark:hover:border-brand-green transition group">
+                <a href="https://youtu.be/cKWl53cWXJA?si=OOEd9Hhrp1E9foAL" target="_blank" class="bg-gray-50 dark:bg-[#070e0c] rounded-2xl border-2 border-gray-200 dark:border-brand-teal/30 p-4 flex items-center gap-3 hover:shadow-md hover:-translate-y-1 hover:border-brand-teal dark:hover:border-brand-green transition-all group">
                     <div class="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center group-hover:scale-105 transition shadow-lg shrink-0 border border-white/20">
                         <i class="fa-brands fa-youtube text-lg"></i>
                     </div>
@@ -136,7 +136,7 @@
                     أكبر مشكلة في النماذج اللغوية زي ChatGPT و Gemini هي <strong>"الهلوسة"</strong> وتأليف المعلومات. لكن NotebookLM يعتمد على مبدأ الالتزام التام بالمصادر <strong>(Strict Grounding)</strong>. الأداة دي بتعتبر نفسها "صندوق مقفول"، بتفتح بس على الملفات اللي إنت بترفعها، وأي إجابة بتاخدها منها بتكون موثقة باقتباس مباشر (Citation) من ورقك!
                 </p>
 
-                <div class="bg-brand-teal/10 dark:bg-brand-teal/20 p-4 rounded-xl border-r-4 border-brand-teal my-4">
+                <div class="bg-brand-teal/10 dark:bg-brand-teal/20 p-4 rounded-xl border-2 border-brand-teal/30 border-r-4 border-r-brand-teal my-4">
                     <p class="font-bold text-brand-dark dark:text-white mb-2"><i class="fa-solid fa-star text-brand-teal"></i> الميزة الجوهرية (متى تستخدم الأداة؟)</p>
                     <p class="text-sm m-0">رغم كل التحديثات، قوة NotebookLM بتظهر لما تتوفر 3 شروط أساسية:</p>
                     <ul class="text-sm list-disc list-inside mt-2 space-y-1">
@@ -149,7 +149,7 @@
                 <!-- جدول مصفوفة النظام البيئي -->
                 <div class="overflow-x-auto my-6">
                     <h4 class="font-bold text-brand-teal mb-3">📊 مصفوفة النظام البيئي: إمتى تستخدم إيه؟</h4>
-                    <table class="w-full text-sm text-right bg-white dark:bg-[#0a1412] rounded-xl overflow-hidden shadow-sm border border-gray-200 dark:border-brand-teal/30">
+                    <table class="w-full text-sm text-right bg-white dark:bg-[#0a1412] rounded-xl overflow-hidden shadow-sm border border-gray-200 dark:border-brand-teal/30 min-w-[600px]">
                         <thead class="bg-brand-teal/10 dark:bg-brand-teal/20 text-brand-dark dark:text-brand-green">
                             <tr>
                                 <th class="p-3 border-b border-gray-200 dark:border-brand-teal/30">الأداة</th>
@@ -181,7 +181,7 @@
                     </table>
                 </div>
 
-                <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-l-4 border-brand-teal my-4">
+                <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30 border-l-4 border-l-brand-teal my-4">
                     <p class="font-bold text-brand-dark dark:text-white mb-1"><i class="fa-solid fa-microphone text-brand-teal"></i> تريكة الإملاء الصوتي (Dictate):</p>
                     <p class="text-sm m-0">عشان تنجز، استخدم أيقونة "المايك" جنب مربع النص. اتكلم براحتك وبأقصى تفصيل ممكن، والذكاء الاصطناعي هيحول كلامك لنص مكتوب بدقة شديدة قبل الإرسال.</p>
                 </div>
@@ -190,11 +190,15 @@
                     <i class="fa-solid fa-sitemap text-brand-green text-sm"></i> التخطيط الثلاثي للواجهة (Three-Column Layout)
                 </h3>
                 <p>الواجهة مقسمة لتخطيط بسيط من 3 أعمدة، وطريقة الاستخدام الأمثل هي إنك تمشي من الشمال لليمين:</p>
-                <ul class="list-disc list-inside space-y-3 mt-4 text-sm text-gray-700 dark:text-gray-200">
-                    <li><strong>لوحة المصادر (اليسار):</strong> هنا بتضيف كل الملفات. إنت بتقول للأداة: "الإجابات موجودة هنا".</li>
-                    <li><strong>لوحة الدردشة (الوسط):</strong> هنا بتتفاعل مع مصادرك وتسأل أو تطلب ملخصات.</li>
-                    <li><strong>لوحة الاستوديو (اليمين):</strong> هنا بتحول مصادرك لمنتجات ملموسة (تقارير، عروض، بودكاست).</li>
-                </ul>
+                
+                <!-- تأطير القائمة لتكون واضحة -->
+                <div class="bg-white dark:bg-[#0a1412] p-5 rounded-2xl border-2 border-gray-100 dark:border-gray-800 shadow-sm mt-4">
+                    <ul class="list-disc list-inside space-y-3 text-sm text-gray-700 dark:text-gray-200">
+                        <li><strong>لوحة المصادر (اليسار):</strong> هنا بتضيف كل الملفات. إنت بتقول للأداة: "الإجابات موجودة هنا".</li>
+                        <li><strong>لوحة الدردشة (الوسط):</strong> هنا بتتفاعل مع مصادرك وتسأل أو تطلب ملخصات.</li>
+                        <li><strong>لوحة الاستوديو (اليمين):</strong> هنا بتحول مصادرك لمنتجات ملموسة (تقارير، عروض، بودكاست).</li>
+                    </ul>
+                </div>
 
                 <h3 class="text-xl font-bold text-brand-dark dark:text-white mt-10 mb-4 flex items-center gap-2">
                     <i class="fa-solid fa-2 text-brand-green text-sm"></i> الربط العبقري.. إزاي تخلي Gemini و NotebookLM "إيد واحدة"؟
@@ -202,17 +206,21 @@
                 <p>
                     عشان تدمج إبداع Gemini اللامحدود مع صلابة داتا NotebookLM، استخدم <strong>تريكة الـ (+) السحرية</strong> في Gemini. بمجرد الضغط عليها واختيار دفترك، إنت استدعيت مصادرك كلها جوه عقل جيميناي.
                 </p>
-                <ul class="list-disc list-inside space-y-2 mt-2">
-                    <li><strong>الذاكرة التراكمية (Notebook Memory):</strong> النظام بيفضل فاكر كل تفصيلة بتناقشها وبيدرب مساعدك الخاص.</li>
-                    <li><strong>المزامنة التلقائية (Auto-Sync):</strong> لو ضفت ملف جديد في NotebookLM، جيميناي هيتعرف عليه فوراً من غير تدخل منك!</li>
-                </ul>
+                
+                <!-- تأطير القائمة لتكون واضحة -->
+                <div class="bg-white dark:bg-[#0a1412] p-5 rounded-2xl border-2 border-gray-100 dark:border-gray-800 shadow-sm mt-4">
+                    <ul class="list-disc list-inside space-y-3 text-sm text-gray-700 dark:text-gray-200">
+                        <li><strong>الذاكرة التراكمية (Notebook Memory):</strong> النظام بيفضل فاكر كل تفصيلة بتناقشها وبيدرب مساعدك الخاص.</li>
+                        <li><strong>المزامنة التلقائية (Auto-Sync):</strong> لو ضفت ملف جديد في NotebookLM، جيميناي هيتعرف عليه فوراً من غير تدخل منك!</li>
+                    </ul>
+                </div>
 
                 <h3 class="text-xl font-bold text-brand-dark dark:text-white mt-10 mb-4 flex items-center gap-2">
                     <i class="fa-solid fa-3 text-brand-green text-sm"></i> فن إدارة المصادر (The Art of Sourcing) وأسرارها
                 </h3>
                 <p>NotebookLM هو "عقل جائع" يتغذى على المعلومات. إليك التفاصيل التقنية الدقيقة لرفع المصادر والحدود (Limits):</p>
                 
-                <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-xl border border-gray-200 dark:border-brand-teal/30 my-4 text-sm space-y-4">
+                <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30 my-4 text-sm space-y-4">
                     <div class="flex gap-3 items-start"><i class="fa-solid fa-star text-brand-teal dark:text-brand-green mt-1"></i> <div><strong class="text-brand-teal dark:text-brand-green">النسخة المجانية:</strong> تتيح لك رفع 50 مصدراً للدفتر الواحد. الحد اليومي للاستوديو يُسمح لك بتوليد حوالي 3 إلى 4 مقاطع صوتية أو فيديو في اليوم.</div></div>
                     <div class="flex gap-3 items-start"><i class="fa-solid fa-crown text-brand-teal dark:text-brand-green mt-1"></i> <div><strong class="text-brand-teal dark:text-brand-green">النسخة المدفوعة (Google Pro):</strong> تتيح لك رفع 300 مصدر للدفتر الواحد. الحد اليومي للاستوديو يُسمح لك بتوليد أكثر من 15 فيديو ومقطعاً يومياً.</div></div>
                     <div class="flex gap-3 items-start"><i class="fa-solid fa-file-circle-check text-brand-teal dark:text-brand-green mt-1"></i> <div><strong class="text-brand-teal dark:text-brand-green">الملفات المدعومة:</strong> يقبل الأداة ملفات (PDF, Google Docs, PPTX, Images, Audio MP3)، روابط المواقع الإلكترونية (URL)، روابط فيديوهات يوتيوب، والاستيراد المباشر من مساحة Google Drive.</div></div>
@@ -223,25 +231,25 @@
 
                 <p class="mt-6 mb-2 font-bold text-brand-dark dark:text-white">تريكات الخبراء في سحب الداتا:</p>
                 <div class="grid md:grid-cols-2 gap-4 my-4">
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-brand-teal/30">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green text-sm mb-2"><i class="fa-solid fa-film"></i> ضغط الفيديوهات (VLC Hack)</h4>
                         <p class="text-xs m-0 text-gray-700 dark:text-gray-200">لو الفيديو أكبر من 200 ميجا، استخدم برنامج VLC (Convert/Save) لتحويله إلى (Audio - MP3) وارفع الملف الصوتي الصغير، وسيقوم بتحليله بالكامل.</p>
                     </div>
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-brand-teal/30">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green text-sm mb-2"><i class="fa-solid fa-list"></i> صائدة القوائم (Playlist Hack)</h4>
                         <p class="text-xs m-0 text-gray-700 dark:text-gray-200">استخدم إضافة <code>YouTube to NotebookLM</code> لسحب تفريغ قائمة تشغيل (Playlist) كاملة من اليوتيوب بضغطة زر كـ "مصادر".</p>
                     </div>
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-brand-teal/30">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green text-sm mb-2"><i class="fa-solid fa-unlock"></i> تجاوز حظر المواقع (Paywalls)</h4>
                         <p class="text-xs m-0 text-gray-700 dark:text-gray-200">افتح المقال المدفوع بـ (Reading Mode)، انسخ النص يدوياً (Copy)، والصقه كـ "نص منسوخ" (Copied Text) داخل الأداة.</p>
                     </div>
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-brand-teal/50 dark:border-brand-green/50 relative overflow-hidden">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-brand-teal/50 dark:border-brand-green/50 relative overflow-hidden">
                         <div class="absolute top-0 right-0 w-2 h-full bg-brand-teal"></div>
                         <h4 class="font-bold text-brand-teal dark:text-brand-green text-sm mb-2"><i class="fa-solid fa-scissors"></i> التبديل الجراحي للمصادر</h4>
                         <p class="text-xs m-0 text-gray-700 dark:text-gray-200">لو الدفتر مليان، اعمل (إلغاء تحديد للكل) وعلم فقط على الملف المرتبط بسؤالك الحالي لتمنع تشتت الذكاء الاصطناعي وتحصل على إجابة دقيقة بالمللي.</p>
                     </div>
                     <!-- تريكة تقسيم الكتب -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-brand-teal/30 md:col-span-2">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30 md:col-span-2">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green text-sm mb-2"><i class="fa-solid fa-file-pdf"></i> تقسيم الكتب الضخمة (PDF Split)</h4>
                         <p class="text-xs m-0 text-gray-700 dark:text-gray-200 leading-relaxed">
                             <strong>تريكاية بسيطة:</strong> لو معاك كتاب أو مصدر كبير، الأفضل تقسمه لمواضيع أصغر عشان تحول مثلاً كل باب في الكتاب لأي حاجة في الاستوديو بشكل مستقل. استخدم أداة زي <a href="https://www.ilovepdf.com/split_pdf#split,range" target="_blank" class="text-brand-teal font-bold underline">iLovePDF</a> لتقسيم الملف. لو عاوز تسأل سؤال مخصص في حتة معينة، هيكون الأفضل دايماً إن المصدر الكبير بتاعك يبقى موجه للجزئية اللي إنت عاوزها بس!
@@ -249,7 +257,7 @@
                     </div>
                     
                     <!-- خاصية البحث والاكتشاف (Discover) -->
-                    <div class="bg-brand-teal/10 dark:bg-[#070e0c] p-5 rounded-xl border border-brand-teal/50 dark:border-brand-green/60 relative overflow-hidden md:col-span-2 shadow-sm">
+                    <div class="bg-brand-teal/10 dark:bg-[#070e0c] p-5 rounded-xl border-2 border-brand-teal/50 dark:border-brand-green/60 relative overflow-hidden md:col-span-2 shadow-sm">
                         <div class="absolute top-0 right-0 w-2 h-full bg-brand-green"></div>
                         <h4 class="font-bold text-brand-teal dark:text-brand-green text-sm mb-2"><i class="fa-solid fa-compass"></i> التحديث الجديد: خاصية البحث والاكتشاف (Search Functions)</h4>
                         <p class="text-sm m-0 text-gray-800 dark:text-gray-200 leading-relaxed mb-3">عشان نسد الفجوة بين الداتا اللي معاك واللي لسه محتاجها، الأداة ضافت 3 وظائف بحث جبارة:</p>
@@ -277,7 +285,7 @@
                 <!-- بروتوكول الـ 5 دقائق -->
                 <div class="overflow-x-auto my-6">
                     <h4 class="font-bold text-brand-teal mb-3">🛡️ بروتوكول الـ 5 دقائق (Validation Framework)</h4>
-                    <table class="w-full text-sm text-right bg-white dark:bg-[#0a1412] rounded-xl overflow-hidden shadow-sm border border-gray-200 dark:border-brand-teal/30">
+                    <table class="w-full text-sm text-right bg-white dark:bg-[#0a1412] rounded-xl overflow-hidden shadow-sm border border-gray-200 dark:border-brand-teal/30 min-w-[600px]">
                         <thead class="bg-brand-teal/10 dark:bg-brand-teal/20 text-brand-dark dark:text-brand-green">
                             <tr>
                                 <th class="p-3 border-b border-gray-200 dark:border-brand-teal/30">الأمر (Prompt)</th>
@@ -318,25 +326,25 @@
                 <h4 class="font-bold text-brand-teal mt-6 mb-3 border-b border-brand-teal/30 pb-2 inline-block"><i class="fa-solid fa-star text-yellow-500"></i> أدوات الفئة الأولى (Tier 1: Must-Use Tools)</h4>
                 <div class="grid md:grid-cols-2 gap-4 text-sm">
                     <!-- Reports -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal transition">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal transition">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-solid fa-file-lines text-brand-teal"></i> التقارير (Reports)</strong>
                         تحول مصادرك لملف إحاطة أو تحليل تنافسي في دقائق.<br>
                         <span class="block mt-2 text-xs bg-brand-teal/10 p-2 rounded">💡 <strong>نصيحة:</strong> تجاهل الصيغ الافتراضية وركز على "الأنماط المقترحة Suggested Formats" لأن الأداة بتقترحها بناءً على التحليل الفعلي لمصادرك إنت.</span>
                     </div>
                     <!-- Slide Decks -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal transition">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal transition">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-solid fa-layer-group text-brand-teal"></i> العروض التقديمية (Slide Decks)</strong>
                         تولد بريزنتيشن كاملة. العيب أن الشرائح تنزل كصور غير قابلة للتعديل بسهولة.<br>
                         <span class="block mt-2 text-xs bg-brand-teal/10 p-2 rounded">💡 <strong>تريكة:</strong> استخدمها لاقتراح السرد (Narrative). ارفع داتا مشروعك وشوفه هيرتب القصة إزاي واعتبرها نقطة انطلاق. لتعديل شريحة، اضغط "Revise" واكتب التعديل بوضوح.</span>
                     </div>
                     <!-- Infographics -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal transition">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal transition">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-solid fa-chart-pie text-brand-teal"></i> الرسوم البيانية (Infographics)</strong>
                         تحول معلوماتك لتصميم بصري رائع للنشر المباشر.<br>
                         <span class="block mt-2 text-xs bg-brand-teal/10 p-2 rounded">💡 <strong>تريكة الهوية البصرية:</strong> ارفع دليل علامتك التجارية (Brand Guideline) كـ مصدر، واكتب في الأمر "اتبع هذا الدليل للألوان والخطوط" ليطابق تصميمك. (تعمل مع التقارير والشرائح أيضاً).</span>
                     </div>
                     <!-- Mind Maps -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal transition">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal transition">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-solid fa-network-wired text-brand-teal"></i> الخرائط الذهنية (Mind Maps)</strong>
                         تعرض لك كل محتويات مصادرك في نظرة سريعة لتعرف ما يستحق القراءة.<br>
                         <span class="block mt-2 text-xs bg-brand-teal/10 p-2 rounded">💡 <strong>تريكة:</strong> الخرائط تفاعلية؛ اضغط على أي فرع لتفتح محادثة موثقة بالكامل حول هذا الموضوع تحديداً!</span>
@@ -346,27 +354,27 @@
                 <h4 class="font-bold text-gray-600 dark:text-gray-300 mt-8 mb-3 border-b border-gray-300 dark:border-gray-600 pb-2 inline-block"><i class="fa-solid fa-tools"></i> أدوات الفئة الثانية (Tier 2: Situational Tools)</h4>
                 <div class="grid md:grid-cols-2 gap-4 text-sm">
                     <!-- Data Tables -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-solid fa-table text-gray-500"></i> جداول البيانات (Data Tables)</strong>
                         <span class="block mt-1 text-xs text-gray-600 dark:text-gray-400">💡 <strong>مثال عملي:</strong> رفع صفحات أسعار ومميزات نماذج الـ AI لتوليد جدول مقارنة وتصديره لـ Google Sheets. دقتها خرافية لأنها لا تهلوس خارج المصادر.</span>
                     </div>
                     <!-- Video Overviews -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-solid fa-video text-gray-500"></i> ملخصات الفيديو (Video Overviews)</strong>
                         <span class="block mt-1 text-xs text-gray-600 dark:text-gray-400">💡 <strong>مثال عملي:</strong> ارفع تفريغ مقابلة دسمة من 30 صفحة، اختر "Detailed Explainer"، واطلب أهم 5 نقاط. ستحصل على عرض مرئي رائع خلال 15 دقيقة يغنيك عن القراءة.</span>
                     </div>
                     <!-- Quiz -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-regular fa-circle-question text-gray-500"></i> الاختبارات (Quiz)</strong>
                         <span class="block mt-1 text-xs text-gray-600 dark:text-gray-400">💡 <strong>استخدام ذكي:</strong> في الفعاليات المباشرة (Live Events)، ارفع عروض المتحدثين وولد كويز سريع للجمهور لتفاعل فوري عبر أداة مثل Slido بدون إرهاق المتحدث!</span>
                     </div>
                     <!-- Flash Cards -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-solid fa-clone text-gray-500"></i> بطاقات المذاكرة (Flash Cards)</strong>
                         <span class="block mt-1 text-xs text-gray-600 dark:text-gray-400">💡 <strong>استخدام ذكي:</strong> ممتازة للتحضير لامتحانات الشهادات. ارفع المواد، حدد مستوى الصعوبة، وخصص الأمر للتركيز على أصعب المصطلحات.</span>
                     </div>
                     <!-- Audio Overviews -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border border-gray-200 dark:border-gray-700 md:col-span-2">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 md:col-span-2">
                         <strong class="text-brand-dark dark:text-white block mb-2"><i class="fa-solid fa-headphones text-gray-500"></i> البودكاست الصوتي (Audio Overviews)</strong>
                         <span class="block mt-1 text-xs text-gray-600 dark:text-gray-400">رغم إن الشات أسرع في استخراج المعلومات، إلا أن البودكاست رائع كحالة خاصة.<br>💡 <strong>استخدام ذكي:</strong> للنشرات البريدية والمقالات الطويلة جداً التي تود استيعابها ولا تملك وقتاً لقراءتها. حولها لصوت واستمع لها عبر تطبيق الموبايل أثناء التنظيف أو القيادة!</span>
                     </div>
@@ -384,7 +392,7 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                     <!-- أ. المذاكرة المجمعة -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green transition group">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border-2 border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:-translate-y-1 hover:border-brand-green dark:hover:border-brand-green border-r-4 border-r-brand-green transition-all group flex flex-col">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green mb-3 flex items-center gap-2">
                             <i class="fa-solid fa-graduation-cap text-lg"></i> أ. المذاكرة المجمعة (الطلاب والمعلمين)
                         </h4>
@@ -396,7 +404,7 @@
                     </div>
 
                     <!-- ب. البحث الأكاديمي -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green transition group">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border-2 border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:-translate-y-1 hover:border-brand-green dark:hover:border-brand-green border-r-4 border-r-brand-green transition-all group flex flex-col">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green mb-3 flex items-center gap-2">
                             <i class="fa-solid fa-microscope text-lg"></i> ب. البحث الأكاديمي (للماجستير والدكتوراه)
                         </h4>
@@ -407,7 +415,7 @@
                     </div>
 
                     <!-- ج. دليل الأجهزة والمعدات -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green transition group">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border-2 border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:-translate-y-1 hover:border-brand-green dark:hover:border-brand-green border-r-4 border-r-brand-green transition-all group flex flex-col">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green mb-3 flex items-center gap-2">
                             <i class="fa-solid fa-screwdriver-wrench text-lg"></i> ج. دليل الأجهزة والمعدات (الصيانة)
                         </h4>
@@ -420,7 +428,7 @@
                     </div>
 
                     <!-- د. التسويق وتحليل المنافسين -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green transition group">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border-2 border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:-translate-y-1 hover:border-brand-green dark:hover:border-brand-green border-r-4 border-r-brand-green transition-all group flex flex-col">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green mb-3 flex items-center gap-2">
                             <i class="fa-solid fa-chart-line text-lg"></i> د. التسويق وتحليل المنافسين
                         </h4>
@@ -432,7 +440,7 @@
                     </div>
 
                     <!-- هـ. صناعة الكتب والمنتجات الرقمية -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green transition group">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border-2 border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:-translate-y-1 hover:border-brand-green dark:hover:border-brand-green border-r-4 border-r-brand-green transition-all group flex flex-col">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green mb-3 flex items-center gap-2">
                             <i class="fa-solid fa-book-journal-whills text-lg"></i> هـ. صناعة الكتب والمنتجات الرقمية (KDP)
                         </h4>
@@ -440,35 +448,35 @@
                         <p class="text-sm text-gray-700 dark:text-gray-200 leading-relaxed mb-2">
                             <strong>التطبيق:</strong> ارفع المصادر واطلب هيكلتها في 5 فصول بأسلوب سردي جذاب.
                         </p>
-                        <p class="text-xs bg-brand-teal/10 dark:bg-brand-teal/20 p-2 rounded text-brand-dark dark:text-gray-300">
+                        <p class="text-xs bg-brand-teal/10 dark:bg-brand-teal/20 p-2 rounded text-brand-dark dark:text-gray-300 mt-auto">
                             <strong>السر الاحترافي:</strong> صَدّر المحتوى لـ Word وحدد العناوين بـ (Heading 1) لإنشاء فهرس ديناميكي قابل للنقر، لتتمكن من بيعه كـ Ebook على Amazon KDP.
                         </p>
                     </div>
 
                     <!-- و. رواد الأعمال وإدارة المراجع -->
-                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green transition group">
+                    <div class="bg-gray-50 dark:bg-[#070e0c] p-5 rounded-2xl border-2 border-gray-200 dark:border-brand-teal/30 hover:shadow-md hover:-translate-y-1 hover:border-brand-green dark:hover:border-brand-green border-r-4 border-r-brand-green transition-all group flex flex-col">
                         <h4 class="font-bold text-brand-teal dark:text-brand-green mb-3 flex items-center gap-2">
                             <i class="fa-solid fa-user-tie text-lg"></i> و. رواد الأعمال وإدارة المراجع الضخمة
                         </h4>
                         <p class="text-sm mb-2"><span class="font-bold text-red-500 dark:text-red-400">المشكلة:</span> لا تملك الوقت لقراءة كتاب إدارة أعمال من 500 صفحة.</p>
-                        <p class="text-sm text-gray-700 dark:text-gray-200 leading-relaxed">
+                        <p class="text-sm text-gray-700 dark:text-gray-200 leading-relaxed mt-auto">
                             <strong>التطبيق:</strong> ارفع الكتاب كـ PDF واطلب: <em>"استخرج الفصل الخاص بالتسعير، ولخصه في نقاط تنفيذية، ثم حول التلخيص إلى إنفوجرافيك لأعرضه على فريقي في الاجتماع"</em>.
                         </p>
                     </div>
 
                     <!-- ز. دفاتر لا أستغني عنها -->
-                    <div class="bg-gradient-to-r from-brand-teal/10 to-brand-green/10 dark:from-brand-teal/20 dark:to-brand-green/20 p-5 rounded-2xl border border-brand-green/40 md:col-span-2 shadow-sm">
+                    <div class="bg-gradient-to-r from-brand-teal/10 to-brand-green/10 dark:from-brand-teal/20 dark:to-brand-green/20 p-5 rounded-2xl border-2 border-brand-green/40 md:col-span-2 shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
                         <h4 class="font-bold text-brand-dark dark:text-white mb-3 flex items-center gap-2">
                             <i class="fa-solid fa-heart text-brand-green"></i> ز. دفاتر لا أستغني عنها (استخدامات يومية)
                         </h4>
                         <div class="grid md:grid-cols-3 gap-4 text-sm text-gray-800 dark:text-gray-200">
-                            <div class="bg-white/60 dark:bg-black/40 p-3 rounded-lg border border-white/40 dark:border-gray-700">
+                            <div class="bg-white/60 dark:bg-black/40 p-3 rounded-xl border border-white/40 dark:border-gray-700">
                                 <strong><i class="fa-solid fa-file-medical text-red-500"></i> التقارير الصحية:</strong> برفع تحاليلي السنوية وأطلب من الأداة تنبيهي لأي تغييرات جوهرية وتسليط الضوء على التريندات اللي محتاج أراقبها في صحتي.
                             </div>
-                            <div class="bg-white/60 dark:bg-black/40 p-3 rounded-lg border border-white/40 dark:border-gray-700">
+                            <div class="bg-white/60 dark:bg-black/40 p-3 rounded-xl border border-white/40 dark:border-gray-700">
                                 <strong><i class="fa-solid fa-handshake text-blue-500"></i> قاعدة بيانات الاجتماعات:</strong> بجمع تفريغات (Transcripts) اجتماعات الشغل، وقبل أي اجتماع جديد بسألها أسئلة مستهدفة وأنا واثق إن الردود دقيقة 100%.
                             </div>
-                            <div class="bg-white/60 dark:bg-black/40 p-3 rounded-lg border border-white/40 dark:border-gray-700">
+                            <div class="bg-white/60 dark:bg-black/40 p-3 rounded-xl border border-white/40 dark:border-gray-700">
                                 <strong><i class="fa-solid fa-sack-dollar text-yellow-500"></i> الضرائب والحسابات:</strong> برفع القوائم المالية مع قوانين الضرائب وبسأل: "إيه الخصومات اللي أستحقها بناءً على الدخل والمصروفات دي؟".
                             </div>
                         </div>
@@ -478,10 +486,14 @@
                 <h3 class="text-xl font-bold text-brand-dark dark:text-white mt-10 mb-4 flex items-center gap-2">
                     <i class="fa-solid fa-8 text-brand-green text-sm"></i> أسرار المحترفين وسير العمل 🔥
                 </h3>
-                <ul class="list-disc list-inside space-y-3 text-sm">
-                    <li><strong>الحفاظ على الهوية البصرية:</strong> ارفع "Brand Guideline" لشركتك كـ PDF، واكتب في الاستوديو: <code>Follow the attached brand guideline for colors...</code></li>
-                    <li><strong>إزالة العلامات المائية:</strong> استخدم موقع Magic Eraser، أو حيلة تغطية اللوجو بمربع له نفس لون الخلفية في Canva.</li>
-                </ul>
+                
+                <!-- تأطير القائمة لتكون واضحة -->
+                <div class="bg-white dark:bg-[#0a1412] p-5 rounded-2xl border-2 border-gray-100 dark:border-gray-800 shadow-sm mt-4">
+                    <ul class="list-disc list-inside space-y-3 text-sm text-gray-700 dark:text-gray-200">
+                        <li><strong>الحفاظ على الهوية البصرية:</strong> ارفع "Brand Guideline" لشركتك كـ PDF، واكتب في الاستوديو: <code>Follow the attached brand guideline for colors...</code></li>
+                        <li><strong>إزالة العلامات المائية:</strong> استخدم موقع Magic Eraser، أو حيلة تغطية اللوجو بمربع له نفس لون الخلفية في Canva.</li>
+                    </ul>
+                </div>
 
                 <h3 class="text-xl font-bold text-brand-dark dark:text-white mt-10 mb-4 flex items-center gap-2">
                     <i class="fa-solid fa-9 text-brand-green text-sm"></i> أدوات التسريع والإضافات السحرية للمتصفح 🚀
@@ -586,118 +598,118 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <!-- Prompt 1 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">1. برمجة عقل الدفتر</h3>
                         <button onclick="copyPrompt(this, 'prompt1')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
 <pre id="prompt1" class="whitespace-pre-wrap font-sans">الهدف الأساسي من هذا الدفتر هو: [الهدف، مثلاً: وضع خطة تسويق]. تصرف دائماً كـ [الدور: خبير استراتيجي]. عند تحليل المصادر المرفقة، ركز بشكل حصري على [الأولويات: الأرقام والتطبيقات العملية]. قم بتأطير وتقديم جميع إجاباتك المستقبلية في شكل [التأطير: نقاط مرقمة وجداول]. تجنب تماماً [المصطلحات المعقدة والمقدمات الطويلة].</pre>
                     </div>
                 </div>
 
                 <!-- Prompt 2 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">2. قالب البودكاست (الصوتي)</h3>
                         <button onclick="copyPrompt(this, 'prompt2')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
 <pre id="prompt2" class="whitespace-pre-wrap font-sans">قم بإنشاء نقاش صوتي بتنسيق [Deep Dive أو Brief أو Debate]. يجب أن يكون الحوار باللغة [العامية المصرية المبسطة / الفصحى]. وجه المضيفين للتركيز بشكل حصري على [أهم 3 نقاط للمناقشة مستخرجة من المصادر]. اشرح المعلومات لجمهور من [المبتدئين / الخبراء]. اجعل النقاش في حدود [أقل من 15 دقيقة]. وتجنب تماماً المقدمات الطويلة.</pre>
                     </div>
                 </div>
 
                 <!-- Prompt 3 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">3. قالب الفيديو (التوضيحي)</h3>
                         <button onclick="copyPrompt(this, 'prompt3')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
 <pre id="prompt3" class="whitespace-pre-wrap font-sans">أنشئ فيديو توضيحي بتنسيق [Explainer أو Brief]. استخدم الأسلوب البصري [Anime أو Whiteboard أو ستايل مخصص زي: ألوان سيبربانك]. ركز السرد الصوتي على الرسالة الأساسية. اجعل النصوص على الشاشة مختصرة جداً لتدعم السرد دون تشتيت الانتباه.</pre>
                     </div>
                 </div>
 
                 <!-- Prompt 4 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">4. شرائح العرض (Slides)</h3>
                         <button onclick="copyPrompt(this, 'prompt4')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
 <pre id="prompt4" class="whitespace-pre-wrap font-sans">قم بإنشاء عرض تقديمي من نوع [Detailed Deck للقراءة / Presenter Slides للشرح]. اجعل طول العرض [Short / Default]. بهدف [شرح المشروع للعملاء]. استخدم عناوين جذابة وتدفع لاتخاذ إجراء. يجب ألا يتجاوز النص في الشريحة 3 نقاط نقاش. التزم بالنمط البصري [ألوان داكنة / رسم يدوي Sketch]. [جزء اختياري: أنشئ الشرائح بتنسيق عمودي 9:16 Portrait كـ Carousel].</pre>
                     </div>
                 </div>
 
                 <!-- Prompt 5 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">5. الإنفوجرافيك</h3>
                         <button onclick="copyPrompt(this, 'prompt5')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
 <pre id="prompt5" class="whitespace-pre-wrap font-sans">أنشئ رسماً بيانياً بتوجيه [Landscape عرضي / Portrait طولي]. اضبط مستوى التفاصيل على [Concise موجز / Standard قياسي]. استخدم النمط البصري [Sketch أو Bento Grid]. يجب أن يوضح التصميم الفكرة المركزية. التزم بالألوان [ألوان الهوية البصرية المرفقة]. اجعل التصميم نظيفاً وخالياً من الفوضى البصرية.</pre>
                     </div>
                 </div>
 
                 <!-- Prompt 6 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">6. برمجة الألعاب (HTML5)</h3>
                         <button onclick="copyPrompt(this, 'prompt6')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
 <pre id="prompt6" class="whitespace-pre-wrap font-sans">بناءً على المصادر المرفقة، قم ببرمجة لعبة تفاعلية تعليمية بصيغة (HTML5) كاملة في ملف واحد. نوع اللعبة: [سحب وإفلات]. عدد الأسئلة: [عدد]. ضع تصميم CSS مبهج بألوان [حدد الألوان]. عند الخطأ اشرح له الإجابة واذكر رقم المصدر. قدم الكود كاملاً من <DOCTYPE html> إلى </html>.</pre>
                     </div>
                 </div>
 
                 <!-- Prompt 7 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">7. استخراج الرؤى العميقة</h3>
                         <button onclick="copyPrompt(this, 'prompt7')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
 <pre id="prompt7" class="whitespace-pre-wrap font-sans">تجاوز التلخيص المعتاد! حدد 3 رؤى غير واضحة مدفونة قد يفوتها القراء، وابحث عن الأنماط التي يلمح إليها المؤلفون دون قولها مباشرة.</pre>
                     </div>
                 </div>
 
                 <!-- Prompt 8 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">8. درع الحجج المضادة</h3>
                         <button onclick="copyPrompt(this, 'prompt8')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
 <pre id="prompt8" class="whitespace-pre-wrap font-sans">ولد لي: (1) أقوى 5 حجج مضادة لبحثي، (2) نقاط الضعف التي سيهاجمها الناقد، (3) الافتراضات غير المثبتة، (4) كيف يجب أن أرد عليها بناءً على مصادري.</pre>
                     </div>
                 </div>
 
                 <!-- Prompt 9 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">9. برمجة الدفتر (Configure Chat - EN)</h3>
                         <button onclick="copyPrompt(this, 'prompt9')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
 <pre id="prompt9" class="whitespace-pre-wrap font-sans text-left">I need a custom instruction for a NotebookLM notebook. Custom instructions in NotebookLM work like system prompts: they set the role, priorities, and framing for every response in that notebook. They should NOT include specific tasks or questions.
 Write a 3-sentence custom instruction that does three things:
 - Sets a relevant expert role
@@ -709,14 +721,14 @@ The goal of this notebook is: [INSERT END GOAL]</pre>
                 </div>
 
                 <!-- Prompt 10 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">10. تقارير الأداة (Reports - EN)</h3>
                         <button onclick="copyPrompt(this, 'prompt10')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
 <pre id="prompt10" class="whitespace-pre-wrap font-sans text-left">I'm using NotebookLM's Reports tool to generate a report from sources I've already uploaded. Write me a custom instruction I can paste directly into NotebookLM's "Describe the report you want to create" field.
 The instruction should be a single paragraph, 3-4 sentences max, written in plain English.
 Here are my two inputs:
@@ -726,14 +738,14 @@ AUDIENCE: [Who is this report for?]</pre>
                 </div>
 
                 <!-- Prompt 11 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">11. شرائح العرض (Slide Decks - EN)</h3>
                         <button onclick="copyPrompt(this, 'prompt11')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
 <pre id="prompt11" class="whitespace-pre-wrap font-sans text-left">Create a deck for [purpose].
 Use clear, action-oriented headlines on each slide that state the key takeaway, not generic topic labels. Limit each slide to 3 talking points maximum.
 Use a [THEME: "minimalist corporate," "bold and modern," "clean editorial," or "dark mode with accent colors."] visual style with a clean, professional layout.</pre>
@@ -741,14 +753,14 @@ Use a [THEME: "minimalist corporate," "bold and modern," "clean editorial," or "
                 </div>
 
                 <!-- Prompt 12 -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] border border-gray-300 dark:border-brand-teal/60 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
                     <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
                         <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">12. السلايدز الطولية (Carousel - EN)</h3>
                         <button onclick="copyPrompt(this, 'prompt12')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
                             <i class="fa-regular fa-copy"></i> نسخ
                         </button>
                     </div>
-                    <div class="bg-white dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
+                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
 <pre id="prompt12" class="whitespace-pre-wrap font-sans text-left">Generate a vertical slide deck in 9:16 portrait format optimized for social media carousels. Each slide should feature one key insight with a single dominant visual element. Keep text large and readable on mobile screens. Use a minimal and bold visual style.</pre>
                     </div>
                 </div>
