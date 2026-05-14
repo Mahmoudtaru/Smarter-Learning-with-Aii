@@ -191,7 +191,6 @@
                 </h3>
                 <p>الواجهة مقسمة لتخطيط بسيط من 3 أعمدة، وطريقة الاستخدام الأمثل هي إنك تمشي من الشمال لليمين:</p>
                 
-                <!-- تأطير القائمة لتكون واضحة -->
                 <div class="bg-white dark:bg-[#0a1412] p-5 rounded-2xl border-2 border-gray-100 dark:border-gray-800 shadow-sm mt-4">
                     <ul class="list-disc list-inside space-y-3 text-sm text-gray-700 dark:text-gray-200">
                         <li><strong>لوحة المصادر (اليسار):</strong> هنا بتضيف كل الملفات. إنت بتقول للأداة: "الإجابات موجودة هنا".</li>
@@ -207,7 +206,6 @@
                     عشان تدمج إبداع Gemini اللامحدود مع صلابة داتا NotebookLM، استخدم <strong>تريكة الـ (+) السحرية</strong> في Gemini. بمجرد الضغط عليها واختيار دفترك، إنت استدعيت مصادرك كلها جوه عقل جيميناي.
                 </p>
                 
-                <!-- تأطير القائمة لتكون واضحة -->
                 <div class="bg-white dark:bg-[#0a1412] p-5 rounded-2xl border-2 border-gray-100 dark:border-gray-800 shadow-sm mt-4">
                     <ul class="list-disc list-inside space-y-3 text-sm text-gray-700 dark:text-gray-200">
                         <li><strong>الذاكرة التراكمية (Notebook Memory):</strong> النظام بيفضل فاكر كل تفصيلة بتناقشها وبيدرب مساعدك الخاص.</li>
@@ -487,7 +485,6 @@
                     <i class="fa-solid fa-8 text-brand-green text-sm"></i> أسرار المحترفين وسير العمل 🔥
                 </h3>
                 
-                <!-- تأطير القائمة لتكون واضحة -->
                 <div class="bg-white dark:bg-[#0a1412] p-5 rounded-2xl border-2 border-gray-100 dark:border-gray-800 shadow-sm mt-4">
                     <ul class="list-disc list-inside space-y-3 text-sm text-gray-700 dark:text-gray-200">
                         <li><strong>الحفاظ على الهوية البصرية:</strong> ارفع "Brand Guideline" لشركتك كـ PDF، واكتب في الاستوديو: <code>Follow the attached brand guideline for colors...</code></li>
@@ -591,324 +588,404 @@
                 <div class="p-3 bg-brand-green/10 dark:bg-brand-green/20 text-brand-green rounded-lg border border-brand-green/30">
                     <i class="fa-solid fa-terminal text-xl"></i>
                 </div>
-                <h2 class="text-2xl font-bold border-b-2 border-brand-teal pb-2 inline-block dark:text-white">التطبيق العملي: مكتبة الأوامر الجاهزة</h2>
+                <h2 class="text-2xl font-bold border-b-2 border-brand-teal pb-2 inline-block dark:text-white">التطبيق العملي: مكتبة الأوامر الجاهزة الشاملة (النسخة المدمجة)</h2>
             </div>
             
-            <p class="mb-6 text-gray-600 dark:text-gray-200 font-semibold">"الكتالوج السري للمحترفين".. انسخ الأمر، غيّر ما بين الأقواس [...] حسب موضوعك، واتفرج على السحر!</p>
+            <div class="bg-gradient-to-r from-brand-teal/10 to-brand-light dark:from-brand-teal/20 dark:to-[#0a1412] border border-brand-teal/30 p-5 rounded-2xl mb-8">
+                <h3 class="font-bold text-brand-dark dark:text-white mb-2 text-lg flex items-center gap-2">
+                    <i class="fa-solid fa-lightbulb text-yellow-500"></i> سر المهنة: إزاي تبني الأمر زي المحترفين؟
+                </h3>
+                <p class="text-sm text-gray-700 dark:text-gray-200 leading-relaxed mb-3">
+                    قبل ما ننسخ وخلاص، لازم تفهم إن الأوامر الاحترافية مش مجرد سطر بنكتبه، هي عبارة عن <strong>(قالب ثابت) + (متغيرات بتعبر عن سياقك)</strong>. قمنا بتطوير الـ 12 أمر الأساسيين ليعملوا بنظام المدخلات عشان تعرف توجه الذكاء الاصطناعي صح وتتحكم في المخرجات بنسبة 100%.
+                </p>
+                <p class="text-sm text-gray-700 dark:text-gray-200 font-semibold mb-0">
+                    👇 اقرأ "المدخلات المطلوبة" لكل أداة، ثم انسخ الأمر (Prompt) واستبدل ما بين الأقواس <code class="text-brand-teal bg-white dark:bg-black px-1 rounded">[...]</code> بناءً على مشروعك!
+                </p>
+            </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <!-- Prompt 1 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">1. برمجة عقل الدفتر</h3>
-                        <button onclick="copyPrompt(this, 'prompt1')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
-<pre id="prompt1" class="whitespace-pre-wrap font-sans">الهدف الأساسي من هذا الدفتر هو: [الهدف، مثلاً: وضع خطة تسويق]. تصرف دائماً كـ [الدور: خبير استراتيجي]. عند تحليل المصادر المرفقة، ركز بشكل حصري على [الأولويات: الأرقام والتطبيقات العملية]. قم بتأطير وتقديم جميع إجاباتك المستقبلية في شكل [التأطير: نقاط مرقمة وجداول]. تجنب تماماً [المصطلحات المعقدة والمقدمات الطويلة].</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 2 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">2. قالب البودكاست (الصوتي)</h3>
-                        <button onclick="copyPrompt(this, 'prompt2')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
-<pre id="prompt2" class="whitespace-pre-wrap font-sans">قم بإنشاء نقاش صوتي بتنسيق [Deep Dive أو Brief أو Debate]. يجب أن يكون الحوار باللغة [العامية المصرية المبسطة / الفصحى]. وجه المضيفين للتركيز بشكل حصري على [أهم 3 نقاط للمناقشة مستخرجة من المصادر]. اشرح المعلومات لجمهور من [المبتدئين / الخبراء]. اجعل النقاش في حدود [أقل من 15 دقيقة]. وتجنب تماماً المقدمات الطويلة.</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 3 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">3. قالب الفيديو (التوضيحي)</h3>
-                        <button onclick="copyPrompt(this, 'prompt3')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
-<pre id="prompt3" class="whitespace-pre-wrap font-sans">أنشئ فيديو توضيحي بتنسيق [Explainer أو Brief]. استخدم الأسلوب البصري [Anime أو Whiteboard أو ستايل مخصص زي: ألوان سيبربانك]. ركز السرد الصوتي على الرسالة الأساسية. اجعل النصوص على الشاشة مختصرة جداً لتدعم السرد دون تشتيت الانتباه.</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 4 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">4. شرائح العرض (Slides)</h3>
-                        <button onclick="copyPrompt(this, 'prompt4')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
-<pre id="prompt4" class="whitespace-pre-wrap font-sans">قم بإنشاء عرض تقديمي من نوع [Detailed Deck للقراءة / Presenter Slides للشرح]. اجعل طول العرض [Short / Default]. بهدف [شرح المشروع للعملاء]. استخدم عناوين جذابة وتدفع لاتخاذ إجراء. يجب ألا يتجاوز النص في الشريحة 3 نقاط نقاش. التزم بالنمط البصري [ألوان داكنة / رسم يدوي Sketch]. [جزء اختياري: أنشئ الشرائح بتنسيق عمودي 9:16 Portrait كـ Carousel].</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 5 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">5. الإنفوجرافيك</h3>
-                        <button onclick="copyPrompt(this, 'prompt5')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
-<pre id="prompt5" class="whitespace-pre-wrap font-sans">أنشئ رسماً بيانياً بتوجيه [Landscape عرضي / Portrait طولي]. اضبط مستوى التفاصيل على [Concise موجز / Standard قياسي]. استخدم النمط البصري [Sketch أو Bento Grid]. يجب أن يوضح التصميم الفكرة المركزية. التزم بالألوان [ألوان الهوية البصرية المرفقة]. اجعل التصميم نظيفاً وخالياً من الفوضى البصرية.</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 6 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">6. برمجة الألعاب (HTML5)</h3>
-                        <button onclick="copyPrompt(this, 'prompt6')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
-<pre id="prompt6" class="whitespace-pre-wrap font-sans">بناءً على المصادر المرفقة، قم ببرمجة لعبة تفاعلية تعليمية بصيغة (HTML5) كاملة في ملف واحد. نوع اللعبة: [سحب وإفلات]. عدد الأسئلة: [عدد]. ضع تصميم CSS مبهج بألوان [حدد الألوان]. عند الخطأ اشرح له الإجابة واذكر رقم المصدر. قدم الكود كاملاً من <DOCTYPE html> إلى </html>.</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 7 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">7. استخراج الرؤى العميقة</h3>
-                        <button onclick="copyPrompt(this, 'prompt7')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
-<pre id="prompt7" class="whitespace-pre-wrap font-sans">تجاوز التلخيص المعتاد! حدد 3 رؤى غير واضحة مدفونة قد يفوتها القراء، وابحث عن الأنماط التي يلمح إليها المؤلفون دون قولها مباشرة.</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 8 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">8. درع الحجج المضادة</h3>
-                        <button onclick="copyPrompt(this, 'prompt8')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="rtl">
-<pre id="prompt8" class="whitespace-pre-wrap font-sans">ولد لي: (1) أقوى 5 حجج مضادة لبحثي، (2) نقاط الضعف التي سيهاجمها الناقد، (3) الافتراضات غير المثبتة، (4) كيف يجب أن أرد عليها بناءً على مصادري.</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 9 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">9. برمجة الدفتر (Configure Chat - EN)</h3>
-                        <button onclick="copyPrompt(this, 'prompt9')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
-<pre id="prompt9" class="whitespace-pre-wrap font-sans text-left">I need a custom instruction for a NotebookLM notebook. Custom instructions in NotebookLM work like system prompts: they set the role, priorities, and framing for every response in that notebook. They should NOT include specific tasks or questions.
-Write a 3-sentence custom instruction that does three things:
-- Sets a relevant expert role
-- Defines what to prioritize when analyzing sources
-- Tells NotebookLM how to frame every response
-Keep it concise and general enough to apply across many questions, not just one task.
-The goal of this notebook is: [INSERT END GOAL]</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 10 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">10. تقارير الأداة (Reports - EN)</h3>
-                        <button onclick="copyPrompt(this, 'prompt10')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
-<pre id="prompt10" class="whitespace-pre-wrap font-sans text-left">I'm using NotebookLM's Reports tool to generate a report from sources I've already uploaded. Write me a custom instruction I can paste directly into NotebookLM's "Describe the report you want to create" field.
-The instruction should be a single paragraph, 3-4 sentences max, written in plain English.
-Here are my two inputs:
-PURPOSE: [What should this report do?]
-AUDIENCE: [Who is this report for?]</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 11 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">11. شرائح العرض (Slide Decks - EN)</h3>
-                        <button onclick="copyPrompt(this, 'prompt11')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
-<pre id="prompt11" class="whitespace-pre-wrap font-sans text-left">Create a deck for [purpose].
-Use clear, action-oriented headlines on each slide that state the key takeaway, not generic topic labels. Limit each slide to 3 talking points maximum.
-Use a [THEME: "minimalist corporate," "bold and modern," "clean editorial," or "dark mode with accent colors."] visual style with a clean, professional layout.</pre>
-                    </div>
-                </div>
-
-                <!-- Prompt 12 -->
-                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col h-full">
-                    <div class="flex justify-between items-center mb-3 border-b border-gray-300 dark:border-brand-teal/40 pb-3">
-                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green">12. السلايدز الطولية (Carousel - EN)</h3>
-                        <button onclick="copyPrompt(this, 'prompt12')" class="text-sm bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-2 shrink-0">
-                            <i class="fa-regular fa-copy"></i> نسخ
-                        </button>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-[#0a1412] border border-gray-200 dark:border-brand-teal/40 rounded-xl p-4 text-sm font-mono text-gray-800 dark:text-gray-100 leading-relaxed overflow-x-auto flex-1" dir="ltr">
-<pre id="prompt12" class="whitespace-pre-wrap font-sans text-left">Generate a vertical slide deck in 9:16 portrait format optimized for social media carousels. Each slide should feature one key insight with a single dominant visual element. Keep text large and readable on mobile screens. Use a minimal and bold visual style.</pre>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 3. صندوق الأدوات والمساعدين (Tools Zone) -->
-        <section id="tools-zone" class="scroll-mt-24 bg-white dark:bg-brand-darkcard border-2 border-gray-200 dark:border-brand-teal/60 rounded-3xl p-6 md:p-8 shadow-md relative overflow-hidden">
-            <div class="relative z-10">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="p-3 bg-brand-teal/10 dark:bg-brand-teal/20 text-brand-teal dark:text-brand-green rounded-lg border border-brand-teal/30">
-                        <i class="fa-solid fa-toolbox text-xl"></i>
-                    </div>
-                    <h2 class="text-2xl font-bold border-b-2 border-brand-teal pb-2 inline-block dark:text-white">ترسانة الأدوات والإضافات السحرية</h2>
-                </div>
-
-                <!-- الأدوات والمنصات الأساسية -->
-                <div class="bg-gray-50 dark:bg-[#070e0c] rounded-2xl p-6 border border-gray-200 dark:border-brand-teal/40 shadow-sm mb-8">
-                    <h3 class="font-bold text-lg text-brand-dark dark:text-white mb-4 border-b border-brand-teal/30 pb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-laptop-code text-brand-teal"></i> الأدوات والمنصات الأساسية
-                    </h3>
-                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-                        <a href="https://notebooklm.google.com" target="_blank" class="bg-white dark:bg-brand-darkcard border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal dark:hover:border-brand-green hover:shadow-md rounded-xl p-3 text-center transition flex flex-col items-center gap-2 group justify-center">
-                            <i class="fa-solid fa-book-open-reader text-2xl text-purple-500 group-hover:scale-110 transition-transform"></i>
-                            <span class="font-semibold text-xs text-brand-dark dark:text-gray-200">NotebookLM</span>
-                        </a>
-                        
-                        <a href="https://gemini.google.com" target="_blank" class="bg-white dark:bg-brand-darkcard border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal dark:hover:border-brand-green hover:shadow-md rounded-xl p-3 text-center transition flex flex-col items-center gap-2 group justify-center">
-                            <i class="fa-brands fa-google text-2xl text-[#4285f4] group-hover:scale-110 transition-transform"></i>
-                            <span class="font-semibold text-xs text-brand-dark dark:text-gray-200">Gemini</span>
-                        </a>
-
-                        <a href="https://magiceraser.org/" target="_blank" class="bg-white dark:bg-brand-darkcard border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal dark:hover:border-brand-green hover:shadow-md rounded-xl p-3 text-center transition flex flex-col items-center gap-2 group justify-center">
-                            <i class="fa-solid fa-eraser text-2xl text-pink-500 group-hover:scale-110 transition-transform"></i>
-                            <span class="font-semibold text-xs text-brand-dark dark:text-gray-200">Magic Eraser</span>
-                        </a>
-
-                        <a href="https://www.canva.com/" target="_blank" class="bg-white dark:bg-brand-darkcard border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal dark:hover:border-brand-green hover:shadow-md rounded-xl p-3 text-center transition flex flex-col items-center gap-2 group justify-center">
-                            <i class="fa-solid fa-pen-to-square text-2xl text-[#00c4cc] group-hover:scale-110 transition-transform"></i>
-                            <span class="font-semibold text-xs text-brand-dark dark:text-gray-200">Canva</span>
-                        </a>
-
-                        <a href="https://www.ilovepdf.com/" target="_blank" class="bg-white dark:bg-brand-darkcard border border-gray-200 dark:border-brand-teal/30 hover:border-brand-teal dark:hover:border-brand-green hover:shadow-md rounded-xl p-3 text-center transition flex flex-col items-center gap-2 group col-span-2 md:col-span-1 justify-center">
-                            <i class="fa-regular fa-file-pdf text-2xl text-red-500 group-hover:scale-110 transition-transform"></i>
-                            <span class="font-semibold text-xs text-brand-dark dark:text-gray-200">iLovePDF</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- إضافات المتصفح (Extensions) كروت منفصلة -->
-                <h3 class="font-bold text-xl text-brand-dark dark:text-white mb-4 border-b border-brand-teal/30 pb-2 flex items-center gap-2">
-                    <i class="fa-solid fa-puzzle-piece text-brand-green"></i> إضافات المتصفح السحرية (Extensions)
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
-                    
-                    <!-- Kortex -->
-                    <div class="bg-white dark:bg-[#070e0c] border border-gray-200 dark:border-brand-teal/30 rounded-2xl p-5 hover:shadow-md hover:border-orange-500 dark:hover:border-orange-500 transition flex flex-col relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-1.5 h-full bg-orange-500"></div>
-                        <h4 class="font-bold text-brand-dark dark:text-white mb-2 text-sm flex items-center gap-2">
-                            <i class="fa-solid fa-bolt text-lg text-orange-500"></i> Kortex Extension
-                        </h4>
-                        <p class="text-xs text-gray-600 dark:text-gray-300 mb-5 flex-1 leading-relaxed">
-                            الترسانة الشاملة للمحترفين. تتيح لك إدارة الأوامر، التحميل والحذف المجمع للمصادر، وتنزيل مخرجات الاستوديو في ملف مضغوط (Zip) بضغطة زر واحدة.
-                        </p>
-                        <a href="https://chromewebstore.google.com/detail/kortex/nhhjbhnckbneojmabkckegjcdijepnhj" target="_blank" class="bg-orange-500 text-white font-bold py-2.5 rounded-xl hover:bg-orange-600 transition shadow-sm text-xs text-center flex items-center justify-center gap-2 mt-auto">
-                            <i class="fa-brands fa-chrome"></i> تثبيت الإضافة
-                        </a>
-                    </div>
-
-                    <!-- Bookshelf -->
-                    <div class="bg-white dark:bg-[#070e0c] border border-gray-200 dark:border-brand-teal/30 rounded-2xl p-5 hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green transition flex flex-col relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-1.5 h-full bg-brand-teal"></div>
-                        <h4 class="font-bold text-brand-dark dark:text-white mb-2 text-sm flex items-center gap-2">
-                            <i class="fa-solid fa-folder-tree text-lg text-brand-teal"></i> Bookshelf / Folder Manager
-                        </h4>
-                        <p class="text-xs text-gray-600 dark:text-gray-300 mb-5 flex-1 leading-relaxed">
-                            لتنظيم عملك وتجنب "الزحام البصري". تتيح لك إنشاء تصنيفات ومجلدات لدفاترك لتسهيل التنقل، مع ميزة تغيير لغة واجهة أداة NotebookLM بالكامل.
-                        </p>
-                        <a href="https://chromewebstore.google.com/detail/bookshelf-folder-manager/ibjbgddbhlcookmdhehgljaneccjidik" target="_blank" class="bg-brand-teal text-white font-bold py-2.5 rounded-xl hover:bg-brand-dark transition shadow-sm text-xs text-center flex items-center justify-center gap-2 mt-auto">
-                            <i class="fa-brands fa-chrome"></i> تثبيت الإضافة
-                        </a>
-                    </div>
-
-                    <!-- YouTube Importer -->
-                    <div class="bg-white dark:bg-[#070e0c] border border-gray-200 dark:border-brand-teal/30 rounded-2xl p-5 hover:shadow-md hover:border-red-600 dark:hover:border-red-500 transition flex flex-col relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-1.5 h-full bg-red-600"></div>
-                        <h4 class="font-bold text-brand-dark dark:text-white mb-2 text-sm flex items-center gap-2">
-                            <i class="fa-brands fa-youtube text-lg text-red-600"></i> YouTube to NotebookLM
-                        </h4>
-                        <p class="text-xs text-gray-600 dark:text-gray-300 mb-5 flex-1 leading-relaxed">
-                            صائدة الفيديوهات! تزرع زراً سحرياً أسفل أي فيديو في يوتيوب لسحب التفريغ النصي (Transcript) لأي فيديو أو قائمة تشغيل كاملة كـ "مصدر" بضغطة واحدة.
-                        </p>
-                        <a href="https://chromewebstore.google.com/detail/kobncfkmjelbefaoohoblamnbackjggk?utm_source=item-share-cb" target="_blank" class="bg-red-600 text-white font-bold py-2.5 rounded-xl hover:bg-red-700 transition shadow-sm text-xs text-center flex items-center justify-center gap-2 mt-auto">
-                            <i class="fa-brands fa-chrome"></i> تثبيت الإضافة
-                        </a>
-                    </div>
-
-                </div>
-                    
-                <!-- كتيبة المساعدين -->
-                <div class="bg-gradient-to-l from-gray-50 to-white dark:from-[#070e0c] dark:to-[#0a1412] rounded-2xl p-6 border border-gray-200 dark:border-brand-teal/40 shadow-sm relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-1.5 h-full bg-gradient-to-b from-brand-teal to-brand-green"></div>
-                        <h3 class="font-bold text-xl text-brand-dark dark:text-white mb-3 border-b border-brand-teal/30 pb-2 flex items-center gap-2">
-                            <i class="fa-solid fa-users-gear text-brand-teal dark:text-brand-green"></i> "كتيبة المساعدين" الخاصة بدبلومة Smarter With AI
+                
+                <!-- Prompt 1: Configure Chat -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-sliders"></i> 1. إعداد الشات (Configure Chat)
                         </h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-300 mb-6 font-semibold">لكي لا تبدأ من الصفر في هندسة الأوامر (Prompt Engineering)، تم برمجة مساعدين شخصيين (Custom GPTs / Gems) مهمتهم مساعدتك بضغطة زر:</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">هذا الأمر يوضع في إعدادات النوت بوك أو الـ Gem ليعطيه شخصية ثابتة ولا يتضمن أسئلة محددة.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><span class="font-bold text-brand-teal">[الهدف]:</span> الهدف النهائي من هذا الدفتر (اقتراح خطة، تلخيص قانون).</li>
+                            <li><span class="font-bold text-brand-teal">[الدور]:</span> مهنة الخبير (محلل بيانات، طبيب، مدرب مبيعات).</li>
+                            <li><span class="font-bold text-brand-teal">[الأولويات]:</span> ما الذي يجب أن يركز عليه (الأدلة التقنية، الجوانب المالية).</li>
+                            <li><span class="font-bold text-brand-teal">[التأطير]:</span> كيف يعرض الإجابات (نقاط، جداول، لغة بسيطة جداً).</li>
+                        </ul>
+                    </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                            <!-- Search Prompting Mood -->
-                            <div class="bg-white dark:bg-brand-darkcard border border-gray-200 dark:border-brand-teal/30 rounded-xl p-4 transition flex flex-col h-full hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green">
-                                <h4 class="font-bold text-brand-teal dark:text-brand-green mb-1 text-sm flex items-center gap-2"><i class="fa-solid fa-magnifying-glass-chart"></i> Search Prompting</h4>
-                                <p class="text-[11px] text-gray-500 mb-3">(مهندس الأوامر)</p>
-                                <p class="text-xs text-gray-700 dark:text-gray-200 mb-5 flex-1 leading-relaxed">لا يعطيك البحث مباشرة، بل يسألك أسئلة تفصيلية (ما هدفك؟ من الجمهور؟ ما المصادر؟)، ثم يصيغ لك أمراً خرافياً للبحث العميق.</p>
-                                <div class="grid grid-cols-2 gap-2 mt-auto">
-                                    <a href="https://chatgpt.com/g/g-69d48fb4cc6c8191a43c1ad13bb3ec39-search-prompting-mood" target="_blank" class="bg-[#10a37f] text-white font-bold py-2 rounded-lg hover:bg-[#0e906f] transition shadow-sm text-[11px] text-center flex items-center justify-center gap-1">
-                                        <i class="fa-solid fa-robot"></i> ChatGPT
-                                    </a>
-                                    <a href="https://gemini.google.com/gem/1D8Ud75Cpr1PwyTMR6kS9XDqDnQX3BRKm?usp=sharing" target="_blank" class="bg-[#4285f4] text-white font-bold py-2 rounded-lg hover:bg-[#3367d6] transition shadow-sm text-[11px] text-center flex items-center justify-center gap-1">
-                                        <i class="fa-brands fa-google"></i> Gemini
-                                    </a>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-500">الأمر الجاهز:</span>
+                        <button onclick="copyPrompt(this, 'prompt-chat-ar')" class="text-xs bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> نسخ
+                        </button>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-brand-green" dir="rtl">
+<pre id="prompt-chat-ar" class="whitespace-pre-wrap font-sans">الهدف الأساسي من هذا الدفتر هو: [الهدف]. تصرف دائماً كـ [الدور]. عند تحليل المصادر، ركز بشكل حصري على [الأولويات]. قم بتأطير وتقديم جميع إجاباتك المستقبلية في شكل [التأطير].</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 2: Audio Overview -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-headphones"></i> 2. قالب البودكاست (Audio Overview)
+                        </h3>
+                        <p class="text-[11px] bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 font-bold px-2 py-1 rounded inline-block mt-2">
+                            ⚠️ انقر على "أيقونة القلم" قبل التوليد. لا تضغط Generate مباشرة!
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><span class="font-bold text-brand-teal">[التنسيق]:</span> اختر (Deep Dive للتعمق، Brief للملخص، Critique للنقد).</li>
+                            <li><span class="font-bold text-brand-teal">[التركيز]:</span> الموضوع الدقيق الذي تريدهم أن يتحدثوا عنه.</li>
+                            <li><span class="font-bold text-brand-teal">[المدة]:</span> الوقت التقريبي (مثال: أقل من 15 دقيقة).</li>
+                            <li><span class="font-bold text-brand-teal">[تجنب]:</span> الأشياء الممنوعة (كالمصطلحات المعقدة، المقدمات الطويلة).</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-500">الأمر الجاهز:</span>
+                        <button onclick="copyPrompt(this, 'prompt-audio')" class="text-xs bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> نسخ
+                        </button>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-brand-green" dir="rtl">
+<pre id="prompt-audio" class="whitespace-pre-wrap font-sans">اجعل تنسيق الحوار [التنسيق]. ركز حصرياً على [التركيز]. اشرح كل نقطة بوضوح، واجعل النقاش في حدود [المدة]. استخدم لغة سهلة الفهم وتجنب تماماً [تجنب].</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 3: Slide Decks (Combined) -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full lg:col-span-2">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-layer-group"></i> 3. شرائح العرض (Slide Decks)
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">هذا القالب يحدد شكل البريزنتيشن وهدفها (يدعم العرض العادي أو العرض الطولي للسوشيال ميديا).</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 border border-gray-200 dark:border-gray-700 h-fit">
+                            <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                            <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                                <li><span class="font-bold text-brand-teal">[النوع]:</span> اختر (Detailed Deck للقراءة، Presenter Slides للشرح).</li>
+                                <li><span class="font-bold text-brand-teal">[الهدف]:</span> لماذا تفعل هذا العرض؟ (إقناع مستثمر، شرح درس).</li>
+                                <li><span class="font-bold text-brand-teal">[النمط البصري]:</span> مثل (Minimalist corporate، Bold and modern).</li>
+                            </ul>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-bold text-brand-teal dark:text-brand-green">أ. العرض الاحترافي (الافتراضي):</span>
+                                    <button onclick="copyPrompt(this, 'prompt-slides-standard-ar')" class="text-[11px] bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-2 py-1 rounded font-semibold transition flex items-center gap-1">
+                                        <i class="fa-regular fa-copy"></i> نسخ
+                                    </button>
+                                </div>
+                                <div class="bg-[#1e1e1e] rounded-xl p-3 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto border-l-4 border-l-brand-teal" dir="rtl">
+<pre id="prompt-slides-standard-ar" class="whitespace-pre-wrap font-sans">قم بإنشاء عرض تقديمي من نوع [النوع] بهدف [الهدف]. استخدم عناوين واضحة وموجهة للعمل (Action-oriented) في كل شريحة. لا تتجاوز 3 نقاط نقاش لكل شريحة. استخدم النمط البصري [النمط البصري] بتخطيط احترافي ونظيف.</pre>
                                 </div>
                             </div>
 
-                            <!-- Deep Research Mood -->
-                            <div class="bg-white dark:bg-brand-darkcard border border-gray-200 dark:border-brand-teal/30 rounded-xl p-4 transition flex flex-col h-full hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green">
-                                <h4 class="font-bold text-brand-teal dark:text-brand-green mb-1 text-sm flex items-center gap-2"><i class="fa-solid fa-microscope"></i> Deep Research</h4>
-                                <p class="text-[11px] text-gray-500 mb-3">(الباحث الاستراتيجي)</p>
-                                <p class="text-xs text-gray-700 dark:text-gray-200 mb-5 flex-1 leading-relaxed">يأخذ الأمر من المساعد الأول، يفككه، يضع خطة بحث (Workflow)، وينطلق ليجلب تقريراً موثقاً بالمللي، ومثالياً للتقارير المعقدة.</p>
-                                <div class="grid grid-cols-1 gap-2 mt-auto">
-                                    <a href="https://gemini.google.com/gem/1c1SAvchx_uzgwtYE6olBc9Et-T3mXrlK?usp=sharing" target="_blank" class="bg-[#4285f4] text-white font-bold py-2 rounded-lg hover:bg-[#3367d6] transition shadow-sm text-[11px] text-center flex items-center justify-center gap-1">
-                                        <i class="fa-brands fa-google"></i> Gemini
-                                    </a>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-bold text-brand-teal dark:text-brand-green">ب. قالب السوشيال ميديا (Carousel):</span>
+                                    <button onclick="copyPrompt(this, 'prompt-slides-social-ar')" class="text-[11px] bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-2 py-1 rounded font-semibold transition flex items-center gap-1">
+                                        <i class="fa-regular fa-copy"></i> نسخ
+                                    </button>
+                                </div>
+                                <div class="bg-[#1e1e1e] rounded-xl p-3 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto border-l-4 border-l-orange-500" dir="rtl">
+<pre id="prompt-slides-social-ar" class="whitespace-pre-wrap font-sans">قم بإنشاء عرض شرائح عمودي بتنسيق 9:16 Portrait مُحسّن لشاشات الهواتف المحمولة. يجب أن تحتوي كل شريحة على فكرة رئيسية واحدة مع عنصر مرئي بارز. حافظ على النص كبيراً وقابلاً للقراءة. استخدم أسلوباً بصرياً [النمط البصري].</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prompt 4: Infographics -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-chart-pie"></i> 4. الرسوم البيانية (Infographics)
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">تُستخدم لتلخيص المعلومات المعقدة في صورة واحدة قوية وجذابة.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><span class="font-bold text-brand-teal">[التوجيه]:</span> (Landscape عرضي، Portrait طولي، Square مربع).</li>
+                            <li><span class="font-bold text-brand-teal">[مستوى التفاصيل]:</span> اختر (Concise موجز أو Standard قياسي). <span class="text-red-500 font-bold">تجنب "Detailed"</span> لمنع الأخطاء.</li>
+                            <li><span class="font-bold text-brand-teal">[النمط]:</span> (Instructional, Anime, Sketch, Bento Grid...).</li>
+                            <li><span class="font-bold text-brand-teal">[الموضوع]:</span> ما هو التركيز الأساسي للرسم؟</li>
+                            <li><span class="font-bold text-brand-teal">[الألوان]:</span> الألوان المرغوبة أو الهوية البصرية.</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-500">الأمر الجاهز:</span>
+                        <button onclick="copyPrompt(this, 'prompt-info-ar')" class="text-xs bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> نسخ
+                        </button>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-brand-green" dir="rtl">
+<pre id="prompt-info-ar" class="whitespace-pre-wrap font-sans">قم بإنشاء رسم بياني بتوجيه [التوجيه] ومستوى تفاصيل [مستوى التفاصيل]، بستايل [النمط]. قم برسم خريطة توضح [الموضوع] مع عرض المحطات الرئيسية. استخدم تصميماً نظيفاً ونظام ألوان [الألوان].</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 5: Reports -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-file-lines"></i> 5. التقارير (Briefing Docs)
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">أفضل أداة لتحويل المصادر الفوضوية إلى مستندات وتقارير عمل منظمة ومُهيكلة.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><span class="font-bold text-brand-teal">[الغرض]:</span> ماذا سيفعل هذا التقرير؟ (تحليل منافسين، تلخيص كتاب، دليل).</li>
+                            <li><span class="font-bold text-brand-teal">[الجمهور]:</span> من سيقرأه؟ (المدير، الباحثون، المبتدئين).</li>
+                            <li><span class="font-bold text-brand-teal">[الهيكل]:</span> الأقسام المطلوبة بالتحديد بالترتيب (ملخص، منهجية..).</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-500">الأمر الجاهز:</span>
+                        <button onclick="copyPrompt(this, 'prompt-report-ar')" class="text-xs bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> نسخ
+                        </button>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-brand-green" dir="rtl">
+<pre id="prompt-report-ar" class="whitespace-pre-wrap font-sans">اكتب تقريراً غرضه [الغرض]، وموجه إلى [الجمهور]. يجب أن يتضمن التقرير الهيكل التالي: [الهيكل]. اتبع نبرة احترافية وادعم تحليلك باقتباسات من المصادر.</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 6: Video Explainer -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-video"></i> 6. قالب الفيديو التوضيحي
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">توليد نصوص وفيديوهات قصيرة سريعة لتلخيص المفاهيم المرئية.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><span class="font-bold text-brand-teal">[التنسيق]:</span> اختر (Explainer شرح تفصيلي أو Brief نبذة سريعة).</li>
+                            <li><span class="font-bold text-brand-teal">[الستايل البصري]:</span> مثل (Anime، Whiteboard، سايبربانك).</li>
+                            <li><span class="font-bold text-brand-teal">[التركيز]:</span> ما هي الرسالة الأساسية للفيديو؟</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-500">الأمر الجاهز:</span>
+                        <button onclick="copyPrompt(this, 'prompt-video-ar')" class="text-xs bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> نسخ
+                        </button>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-brand-green" dir="rtl">
+<pre id="prompt-video-ar" class="whitespace-pre-wrap font-sans">أنشئ فيديو توضيحي بتنسيق [التنسيق]. استخدم الأسلوب البصري [الستايل البصري]. ركز السرد الصوتي على [التركيز]. اجعل النصوص على الشاشة مختصرة جداً لتدعم السرد دون تشتيت الانتباه.</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 7: HTML5 Games -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-gamepad"></i> 7. برمجة الألعاب (HTML5)
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">تحويل محتوى مصادرك إلى لعبة تفاعلية للطلاب أو للمراجعة الممتعة.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><span class="font-bold text-brand-teal">[نوع اللعبة]:</span> (سحب وإفلات، اختيارات متعددة، توصيل).</li>
+                            <li><span class="font-bold text-brand-teal">[العدد]:</span> كم عدد الأسئلة داخل اللعبة؟</li>
+                            <li><span class="font-bold text-brand-teal">[الألوان]:</span> ألوان واجهة اللعبة لتناسب ذوقك.</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-500">الأمر الجاهز:</span>
+                        <button onclick="copyPrompt(this, 'prompt-game')" class="text-xs bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> نسخ
+                        </button>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-brand-green" dir="rtl">
+<pre id="prompt-game" class="whitespace-pre-wrap font-sans">بناءً على المصادر المرفقة، قم ببرمجة لعبة تفاعلية تعليمية بصيغة (HTML5) كاملة في ملف واحد. نوع اللعبة: [نوع اللعبة]. عدد الأسئلة: [العدد]. ضع تصميم CSS مبهج بألوان [الألوان]. عند الخطأ اشرح الإجابة واذكر رقم المصدر. قدم الكود كاملاً من <!DOCTYPE html> إلى </html>.</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 8: Deep Insights -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-eye"></i> 8. استخراج الرؤى العميقة
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">استخراج الأفكار المدفونة بين السطور والتي يصعب على البشر ملاحظتها.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><span class="font-bold text-brand-teal">[التركيز/السياق]:</span> ما هي الجزئية أو الموضوع الذي تريد التعمق فيه بشدة داخل مصادرك؟</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-500">الأمر الجاهز:</span>
+                        <button onclick="copyPrompt(this, 'prompt-insights')" class="text-xs bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> نسخ
+                        </button>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-brand-green" dir="rtl">
+<pre id="prompt-insights" class="whitespace-pre-wrap font-sans">بالتركيز على [التركيز/السياق]، تجاوز التلخيص المعتاد! حدد 3 رؤى غير واضحة مدفونة في المصادر قد يفوتها القراء، وابحث عن الأنماط التي يلمح إليها المؤلفون دون قولها مباشرة.</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 9: Counter Arguments -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-brand-teal rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full lg:col-span-2">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-brand-teal dark:text-brand-green flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved"></i> 9. درع الحجج المضادة (Red Teaming)
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">اختبر قوة أفكارك وأبحاثك بجعل الأداة تلعب دور المعارض الشرس (ممتاز للباحثين ورواد الأعمال).</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ المدخلات المطلوبة منك:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><span class="font-bold text-brand-teal">[موضوع البحث/الفكرة]:</span> الفكرة التي تريد الدفاع عنها أو خطة العمل التي تريد اختبارها.</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-500">الأمر الجاهز:</span>
+                        <button onclick="copyPrompt(this, 'prompt-shield')" class="text-xs bg-brand-teal/10 hover:bg-brand-teal/20 text-brand-teal dark:text-brand-green px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> نسخ
+                        </button>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-brand-green" dir="rtl">
+<pre id="prompt-shield" class="whitespace-pre-wrap font-sans">بالنسبة لموضوع [موضوع البحث/الفكرة]، ولد لي: (1) أقوى 5 حجج مضادة للفكرة، (2) نقاط الضعف التي سيهاجمها الناقد، (3) الافتراضات غير المثبتة في الداتا، (4) كيف يجب أن أرد عليها بالدليل بناءً على مصادري.</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 10: Configure Chat (EN) -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-blue-500 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                            <i class="fa-solid fa-earth-americas"></i> 10. Configure Chat (EN)
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">النسخة الإنجليزية من برمجة عقل النوت بوك أو الـ Gem (أكثر دقة في توليد النصوص بالإنجليزية).</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ Your Inputs:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300" dir="ltr">
+                            <li><span class="font-bold text-blue-500">[END GOAL]:</span> Final goal (e.g., Marketing strategy).</li>
+                            <li><span class="font-bold text-blue-500">[ROLE]:</span> The expert persona (e.g., Data Analyst).</li>
+                            <li><span class="font-bold text-blue-500">[PRIORITIES]:</span> What to focus on (e.g., Financials).</li>
+                            <li><span class="font-bold text-blue-500">[FORMAT]:</span> Desired output format (e.g., Bullet points).</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <button onclick="copyPrompt(this, 'prompt-chat-en')" class="text-xs bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                        <span class="text-xs font-bold text-gray-500">Ready Prompt:</span>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-blue-500" dir="ltr">
+<pre id="prompt-chat-en" class="whitespace-pre-wrap font-sans">The primary goal of this notebook is: [END GOAL]. Always act as a [ROLE]. When analyzing the uploaded sources, focus exclusively on [PRIORITIES]. Frame and present all your future answers in the form of [FORMAT].</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 11: Reports (EN) -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-blue-500 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                            <i class="fa-solid fa-file-lines"></i> 11. Reports (EN)
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">إنشاء تقارير وأدلة عمل رسمية باللغة الإنجليزية للشركات الأجنبية أو الأبحاث.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 mb-4 border border-gray-200 dark:border-gray-700">
+                        <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ Your Inputs:</strong>
+                        <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300" dir="ltr">
+                            <li><span class="font-bold text-blue-500">[PURPOSE]:</span> What should this report do?</li>
+                            <li><span class="font-bold text-blue-500">[AUDIENCE]:</span> Who is this report for?</li>
+                            <li><span class="font-bold text-blue-500">[STRUCTURE]:</span> Desired sections (e.g., Exec Summary, Methodology).</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-2">
+                        <button onclick="copyPrompt(this, 'prompt-report-en')" class="text-xs bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1 shrink-0">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                        <span class="text-xs font-bold text-gray-500">Ready Prompt:</span>
+                    </div>
+                    <div class="bg-[#1e1e1e] rounded-xl p-4 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto flex-1 border-l-4 border-l-blue-500" dir="ltr">
+<pre id="prompt-report-en" class="whitespace-pre-wrap font-sans">Write a report whose purpose is [PURPOSE], directed to [AUDIENCE]. The report must include the following structure: [STRUCTURE]. Maintain a professional tone and support your analysis with citations from the sources.</pre>
+                    </div>
+                </div>
+
+                <!-- Prompt 12: Slides (EN) -->
+                <div class="bg-white dark:bg-[#070e0c] border-2 border-gray-200 dark:border-brand-teal/30 border-t-4 border-t-blue-500 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all flex flex-col h-full lg:col-span-2">
+                    <div class="mb-4 border-b border-gray-200 dark:border-brand-teal/30 pb-3">
+                        <h3 class="font-bold text-lg text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                            <i class="fa-solid fa-layer-group"></i> 12. Slide Decks & Carousel (EN)
+                        </h3>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">توليد نصوص للشرائح العادية أو السوشيال ميديا باللغة الإنجليزية.</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4" dir="ltr">
+                        <div class="bg-gray-50 dark:bg-[#0a1412] rounded-xl p-4 border border-gray-200 dark:border-gray-700 h-fit">
+                            <strong class="text-xs text-brand-dark dark:text-white block mb-2 border-b border-gray-200 dark:border-gray-700 pb-1">⚙️ Your Inputs:</strong>
+                            <ul class="text-xs space-y-2 text-gray-700 dark:text-gray-300">
+                                <li><span class="font-bold text-blue-500">[TYPE]:</span> (e.g., Detailed Deck, Presenter Slides).</li>
+                                <li><span class="font-bold text-blue-500">[PURPOSE]:</span> (e.g., pitch to investors).</li>
+                                <li><span class="font-bold text-blue-500">[THEME]:</span> (e.g., minimal, bold, corporate).</li>
+                            </ul>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-bold text-blue-600 dark:text-blue-400">A. Standard Deck:</span>
+                                    <button onclick="copyPrompt(this, 'prompt-slides-standard-en')" class="text-[11px] bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 px-2 py-1 rounded font-semibold transition flex items-center gap-1">
+                                        <i class="fa-regular fa-copy"></i> Copy
+                                    </button>
+                                </div>
+                                <div class="bg-[#1e1e1e] rounded-xl p-3 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto border-l-4 border-l-blue-500">
+<pre id="prompt-slides-standard-en" class="whitespace-pre-wrap font-sans">Create a [TYPE] presentation for [PURPOSE]. Use clear, action-oriented headlines on each slide that state the key takeaway. Limit each slide to 3 talking points maximum. Use a [THEME] visual style with a clean, professional layout.</pre>
                                 </div>
                             </div>
 
-                            <!-- NotebookLM Mood -->
-                            <div class="bg-white dark:bg-brand-darkcard border border-gray-200 dark:border-brand-teal/30 rounded-xl p-4 transition flex flex-col h-full hover:shadow-md hover:border-brand-teal dark:hover:border-brand-green">
-                                <h4 class="font-bold text-brand-teal dark:text-brand-green mb-1 text-sm flex items-center gap-2"><i class="fa-solid fa-book-journal-whills"></i> NotebookLM Mood</h4>
-                                <p class="text-[11px] text-gray-500 mb-3">(خبير الاستوديو)</p>
-                                <p class="text-xs text-gray-700 dark:text-gray-200 mb-5 flex-1 leading-relaxed">إذا احترت في صياغة أمر للبودكاست أو الإنفوجرافيك، اشرح له فكرتك وسيقوم بضبط "السيناريو" والأمر المخصص لتنسخه وتضعه في أيقونة القلم.</p>
-                                <div class="grid grid-cols-2 gap-2 mt-auto">
-                                    <a href="https://chatgpt.com/g/g-68f6cc30b078819197b1375a44e8ca83-notebooklm-mood" target="_blank" class="bg-[#10a37f] text-white font-bold py-2 rounded-lg hover:bg-[#0e906f] transition shadow-sm text-[11px] text-center flex items-center justify-center gap-1">
-                                        <i class="fa-solid fa-robot"></i> ChatGPT
-                                    </a>
-                                    <a href="https://gemini.google.com/gem/ac08e2d00ff7" target="_blank" class="bg-[#4285f4] text-white font-bold py-2 rounded-lg hover:bg-[#3367d6] transition shadow-sm text-[11px] text-center flex items-center justify-center gap-1">
-                                        <i class="fa-brands fa-google"></i> Gemini
-                                    </a>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-bold text-blue-600 dark:text-blue-400">B. Social Media Carousel:</span>
+                                    <button onclick="copyPrompt(this, 'prompt-slides-social-en')" class="text-[11px] bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 px-2 py-1 rounded font-semibold transition flex items-center gap-1">
+                                        <i class="fa-regular fa-copy"></i> Copy
+                                    </button>
+                                </div>
+                                <div class="bg-[#1e1e1e] rounded-xl p-3 text-sm font-mono text-green-400 leading-relaxed overflow-x-auto border-l-4 border-l-orange-500">
+<pre id="prompt-slides-social-en" class="whitespace-pre-wrap font-sans">Generate a vertical slide deck in 9:16 portrait format optimized for social media carousels. Each slide should feature one key insight with a single dominant visual element. Keep text large and readable on mobile screens. Use a [THEME] visual style.</pre>
                                 </div>
                             </div>
                         </div>
